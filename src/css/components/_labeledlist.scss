@@ -1,0 +1,55 @@
+.labeled-list {
+  $root: &;
+
+  &__label {
+    margin: 0.6667em 0;
+    font-size: .75em;
+    font-weight: 400;
+    color: #8a8995;
+  }
+
+  &__item {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__link {
+    display: inline-block;
+    font-size: 0.9375em;
+    flex: 0 1 auto;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    color: #080606;
+    text-decoration: none;
+  }
+
+  &__icon-wrap {
+    display: inline-block;
+    flex: 0 0 auto;
+    cursor: pointer;
+  }
+
+  &__icon-control {
+    display: none;
+  }
+
+  &__icon {
+    width: 1.0625em;
+    height: 1em;
+    overflow: visible;
+    stroke: #e0e0e0;
+    fill: transparent;
+    transition: fill .15s ease-in-out 0s, stroke .15s ease-in-out 0s;
+
+    #{$root}__icon-control:checked ~ & {
+      fill: #000;
+      stroke: #000;
+    }
+
+    &:not(:root) {
+      overflow: visible;
+    }
+  }
+
+}

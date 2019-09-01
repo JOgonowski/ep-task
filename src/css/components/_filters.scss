@@ -1,0 +1,39 @@
+.filters {
+  $root: &;
+
+  &__item {
+    display: flex;
+    padding: 1.2143em 1.0714em;
+    font-size: 0.875em;
+    text-decoration: none;
+    color: #fff;
+    transition: background-color .15s ease-in-out 0s;
+
+    &:hover {
+      background-color: rgba(41,42,72, .4);
+    }
+
+    &:active, &--active, &--active:hover {
+      background-color: rgba(41,42,72, 1);
+    }
+  }
+
+  &__icon {
+    display: inline-block;
+    margin-right: 0.6429em;
+    flex: 0 0 auto;
+    font-size: 1.1429em;
+    line-height: 1em;
+  }
+
+  &__name {
+    display: inline-block;
+    flex: 1 1 auto;
+  }
+
+  &__count {
+    display: inline-block;
+    flex: 0 0 auto;
+    color: #8a8995;
+  }
+}
