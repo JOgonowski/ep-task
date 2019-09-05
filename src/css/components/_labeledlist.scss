@@ -5,7 +5,7 @@
     margin: 0.6667em 0;
     font-size: .75em;
     font-weight: 400;
-    color: #8a8995;
+    color: $cLabeledListLabelFg;
   }
 
   &__item {
@@ -20,7 +20,7 @@
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
-    color: #080606;
+    color: $cLabeledListFg;
     text-decoration: none;
   }
 
@@ -38,13 +38,13 @@
     width: 1.0625em;
     height: 1em;
     overflow: visible;
-    stroke: #e0e0e0;
+    stroke: $cStarIconInactive;
     fill: transparent;
     transition: fill .15s ease-in-out 0s, stroke .15s ease-in-out 0s;
 
     #{$root}__icon-control:checked ~ & {
-      fill: #000;
-      stroke: #000;
+      fill: $cStarIconActive;
+      stroke: $cStarIconActive;
     }
 
     &:not(:root) {

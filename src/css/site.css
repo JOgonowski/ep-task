@@ -72,7 +72,7 @@ button, input {
   padding: 1.2143em 1.0714em;
   font-size: 0.875em;
   text-decoration: none;
-  color: #fff;
+  color: #ffffff;
   transition: background-color 0.15s ease-in-out 0s;
 }
 .filters__item:hover {
@@ -135,8 +135,8 @@ button, input {
   transition: fill 0.15s ease-in-out 0s, stroke 0.15s ease-in-out 0s;
 }
 .labeled-list__icon-control:checked ~ .labeled-list__icon {
-  fill: #000;
-  stroke: #000;
+  fill: #21233d;
+  stroke: #21233d;
 }
 .labeled-list__icon:not(:root) {
   overflow: visible;
@@ -202,7 +202,6 @@ button, input {
 .window__sidebar {
   grid-column: 1;
   grid-row: 2;
-  background-color: #101022;
   background-color: rgba(16, 16, 34, 0.9);
   overflow: auto;
   border-radius: 0 0 0 0.625em;

@@ -1,6 +1,6 @@
 {
   "name": "ep-task",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "private": true,
   "scripts": {
     "build": "sass src/css:src/css && postcss src/css/site.css -o assets/css/site.css",

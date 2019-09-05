@@ -1,12 +1,12 @@
 .window {
   display: grid;
-  grid-template-columns: 9.375em 1fr;
-  grid-template-rows: 2.5em 1fr;
-  width: 40.625em;
-  height: 31.25em;
+  grid-template-columns: $wWindowSidebarWidth 1fr;
+  grid-template-rows: $hWindowControlsHeight 1fr;
+  width: $wWindowWidth;
+  height: $hWindowHeight;
   overflow: hidden;
-  border-radius: 0.625em;
-  font-family: 'roboto', sans-serif;
+  border-radius: $rWindowBorderRadius;
+  font-family: $fMain;
   color: #fff;
   box-shadow: rgba(0, 0, 0, .5) 0 0 15px 0;
   backdrop-filter: blur(5px);
@@ -18,19 +18,19 @@
 
   &__controls {
     display: flex;
-    padding: 0 0.9375em;
+    padding: 0 $wWindowControlsPaddingHorizontal;
     grid-column: 1;
     grid-row: 1;
-    background-color: #101022;
+    background-color: $cWindowControlsBg;
     align-items: center;
     justify-content: flex-start;
-    border-radius: 0.625em 0 0 0;
+    border-radius: $rWindowBorderRadius 0 0 0;
   }
 
   &__button {
     display: inline-block;
-    width: 0.625em;
-    height: 0.625em;
+    width: $wWindowControlsButtonSize;
+    height: $wWindowControlsButtonSize;
     padding: 0;
     margin: 0 0.625em 0 0;
     border: 0;
@@ -54,18 +54,17 @@
   &__sidebar {
     grid-column: 1;
     grid-row: 2;
-    background-color: #101022;
-    background-color: rgba(16,16,34, .9);
+    background-color: $cWindowSidebarBg;
     overflow: auto;
-    border-radius: 0 0 0 0.625em;
+    border-radius: 0 0 0 $rWindowBorderRadius;
   }
 
   &__content {
     padding: 0 0.9375em;
     grid-column: 2;
     grid-row: 1 / span 2;
-    background-color: #f6f6f6;
-    color: #080606;
+    background-color: $cWindowContentBg;
+    color: $cWindowContentFg;
     overflow: auto;
   }
 }

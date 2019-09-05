@@ -6,15 +6,15 @@
     padding: 1.2143em 1.0714em;
     font-size: 0.875em;
     text-decoration: none;
-    color: #fff;
+    color: $cFiltersFg;
     transition: background-color .15s ease-in-out 0s;
 
     &:hover {
-      background-color: rgba(41,42,72, .4);
+      background-color: $cFiltersBgHover;
     }
 
     &:active, &--active, &--active:hover {
-      background-color: rgba(41,42,72, 1);
+      background-color: $cFiltersBgActive;
     }
   }
 
@@ -34,6 +34,6 @@
   &__count {
     display: inline-block;
     flex: 0 0 auto;
-    color: #8a8995;
+    color: $cFiltersCountFg;
   }
 }

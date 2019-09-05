@@ -1,0 +1,37 @@
+// Site fonts
+$fMain: 'roboto', sans-serif;
+
+// Site dimensions
+$wWindowWidth: 40.625em;
+$hWindowHeight: 31.25em;
+
+$wWindowSidebarWidth: 9.375em;
+
+$hWindowControlsHeight: 2.5em;
+$wWindowControlsPaddingHorizontal: 0.9375em;
+$wWindowControlsButtonSize: 0.625em;
+
+$wWellPaddingHorizontal: 0.6875em;
+$hWellPaddingVertical: 0.625em;
+$hWellBottomMargin: 0.3125em;
+
+$rWindowBorderRadius: 0.625em;
+
+// Site colors
+$cKey1: #080606;
+$cKey2: #8a8995;
+
+$cWindowControlsBg: #101022;
+$cWindowSidebarBg: rgba(16,16,34, .9);
+$cWindowContentBg: #f6f6f6;
+$cWindowContentFg: $cKey1;
+
+$cFiltersFg: #ffffff;
+$cFiltersCountFg: $cKey2;
+$cFiltersBgHover: rgba(41,42,72, .4);
+$cFiltersBgActive: rgba(41,42,72, 1);
+
+$cLabeledListLabelFg: $cKey2;
+$cLabeledListFg: $cKey1;
+$cStarIconInactive: #e0e0e0;
+$cStarIconActive: #21233d;
